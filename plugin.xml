@@ -6,14 +6,22 @@
   </js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="AmILate">
-          <param name="android-package" value="co.fancyrabbit.AmILate"/>
-      </feature>
+    <feature name="AmILate">
+      <param name="android-package" value="co.fancyrabbit.AmILate"/>
+    </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml"/>
     <source-file src="src/android/AmILate.java" target-dir="src/cordova-plugin-am-i-late/AmILate"/>
     <config-file parent="/*" target="AndroidManifest.xml">
-      <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+  </config-file>
+  </platform>
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="AmILate">
+          <param name="ios-package" value="AmILate"/>
+      </feature>
     </config-file>
+    <source-file src="src/ios/AmILate.m"/>
   </platform>
 </plugin>

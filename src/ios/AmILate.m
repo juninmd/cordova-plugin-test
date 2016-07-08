@@ -35,8 +35,8 @@
             Code to retrieve name, time of next appointment goes here
         **/
         bool foundAppointment = YES;
-        NSString *appointmentName = @"big date";
-        NSString *appointmentDate = @"NOW!";
+        NSString *appointmentName = @"iOS Test";
+        NSString *appointmentDate = @"Right now!";
 
         if (foundAppointment) {
             NSMutableDictionary *appointment = [NSMutableDictionary dictionaryWithCapacity:2];

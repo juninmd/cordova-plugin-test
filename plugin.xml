@@ -24,4 +24,9 @@
     </config-file>
     <source-file src="src/ios/AmILate.m"/>
   </platform>
+  <platform name="windows">
+    <js-module src="src/windows/AmILate.js" name="AmILate">
+        <runs target="" />
+    </js-module>
+  </platform>
 </plugin>
